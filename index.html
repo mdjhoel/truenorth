@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>True North Counselling</title>
+  <!-- Google Icon Font -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Custom CSS for a professional look -->
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f0fbfb; /* Very light, calming blue-green */
+    }
+    /* New Youthful & Calming Color Scheme */
+    :root {
+      --color-dark: #00838f; /* Dark Cyan for nav, footer */
+      --color-primary: #4db6ac; /* Soft Teal for hero */
+      --color-light: #e0f7fa; /* Pale Blue for accent sections */
+      --color-button: #ffb74d; /* Soft Orange for buttons */
+      --color-button-hover: #ffa000; /* Darker orange for hover */
+    }
+
+    nav {
+      background-color: var(--color-dark);
+      box-shadow: none;
+    }
+
+    .hero-about-section {
+      color: white;
+      padding: 50px 0;
+      text-align: center;
+      background-image: url('resources/truenorth.png'); /* Yukon mountains */
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .hero-about-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 131, 143, 0.7); /* Darker overlay for text readability */
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding-top: 0px;
+    }
+
+    .hero-button:hover {
+      background-color: var(--color-button-hover) !important;
+    }
+
+    h1, h2, h3 {
+      font-weight: 300;
+    }
+    
+    .card {
+      border-radius: 8px;
+    }
+
+    .services .card-content {
+      min-height: 200px;
+    }
+
+    .indigenous-approach {
+      background-color: var(--color-light);
+      padding: 50px 0;
+    }
+    .contact-form {
+      padding: 30px;
+    }
+    .contact-form .btn {
+      background-color: var(--color-dark);
+    }
+    .contact-form .btn:hover {
+      background-color: #006064; /* Darker shade of the primary color */
+    }
+    footer.page-footer {
+      background-color: var(--color-dark);
+    }
+    .social-icons a {
+      color: white;
+      margin: 0 10px;
+    }
+
+    /* New styles for the overlapping image and content */
+    .about-content-container {
+      position: relative;
+      background-color: rgba(255, 255, 255, 0.6);
+      color: #333;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      margin: 5%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    @media (min-width: 992px) { /* Adjust for desktop layout */
+      .about-image {
+        left: 15%;
+        transform: translateX(0);
+      }
+      .about-content-container {
+        padding-left: 200px;
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper container">
+        <a href="#!" class="brand-logo left">True North Counselling</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#indigenous-approach">Updates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#indigenous-approach">Updates</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <!-- Hero & About Combined Section -->
+  <section id="about" class="hero-about-section scrollspy">
+    <div class="hero-content">
+      <h1 class="center-align">A safe space for healing and growth.</h1>
+      <h5 class="light center-align">Mental Health Counselling, specializing in Trauma, Sexual Violence and Indigenous Health.</h5>
+    </div>
+
+
+    <div class="about-content-container">
+      <div class="row">
+        <div class="col l4 pull-l2 s12">
+          <img src="resources/face.jpeg" alt="" class="circle responsive-img">
+        </div>
+        <div class="col l8 pull-l1 s12">
+          <span class="black-text">
+            <h1>About</h1>
+            <h5>Stacey MacLean, MA (C. Psyc), LCT</h5>
+            <p class="flow-text">
+              Hello! My name is Stacey and I’ve been a Licensed Counselling Therapist since 2013, with a specialization in trauma. If you’re suffering, I want to help you to suffer less. If you feel lost, I am here to assist and guide you. If you need a hand rebuilding, I’m here to walk beside you.
+            </p>
+          </span>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  
+  <div class="divider"></div>
+
+  <!-- Services Section -->
+  <section id="services" class="section scrollspy">
+    <div class="container">
+      <h2 class="light center-align">Our Services</h2>
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card hoverable">
+            <div class="card-content">
+              <span class="card-title activator"><i class="material-icons right">more_vert</i>Sexual Trauma Therapy</span>
+              <p>Mental Health Counselling, specializing in Trauma, Sexual Violence and Indigenous Health.</p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title"><i class="material-icons right">close</i>More on Trauma Therapy</span>
+              <p>We use a range of therapeutic modalities, including EMDR, Somatic Experiencing, and CBT, to help clients process trauma, reduce symptoms, and develop new coping mechanisms. Our approach is gentle and client-led.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card hoverable">
+            <div class="card-content">
+              <span class="card-title activator"><i class="material-icons right">more_vert</i>Indigenous-Focused Counselling</span>
+              <p>Culturally-sensitive counselling that honors Indigenous ways of knowing and healing.</p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title"><i class="material-icons right">close</i>More on Indigenous Counselling</span>
+              <p>Our sessions are grounded in respect for cultural traditions and the unique experiences of Indigenous peoples. We work with clients to incorporate traditional healing practices and address the impacts of colonialism and intergenerational trauma.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card hoverable">
+            <div class="card-content">
+              <span class="card-title activator"><i class="material-icons right">more_vert</i>Individual & Group Therapy</span>
+              <p>We offer both one-on-one sessions and supportive group environments for shared healing.</p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title"><i class="material-icons right">close</i>More on Therapy Options</span>
+              <p>Individual sessions provide a private setting for deep personal work. Our group therapy offers a safe community space to connect with others who have similar experiences, fostering a sense of belonging and mutual support.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Indigenous Healing Approach Section -->
+  <section id="indigenous-approach" class="indigenous-approach section scrollspy">
+    <div class="container">
+      <h2 class="light center-align">Updates</h2>
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card hoverable">
+            <div class="card-image activator">
+              <img src="resources/book.jpeg">
+            </div>
+            <div class="card-content">
+              <span class="card-title">My kids book</span>
+              <p>Penny had a bad day at school. A really bad day! Now she’s left to figure out how to deal with a bully that is threatening to make her never want to go to school ever again.</p>
+            </div>
+            <div class="card-action">
+              <a href="https://monsterhousepublishing.com/products/pennys-triumphant-turnaround" target="_blank">Purchase</a>
+            </div>
+          </div>
+          </div>
+
+        <div class="col s12 m4">
+          <div class="card hoverable">
+            <div class="card-image activator">
+              <img src="resources/sw_podcast.jpeg">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Podcast (2025-08-07)</span>
+              <p>Beating Burnout w/ Stacey MacLean. This episode contains details and stories that may be triggering for some audiences. Viewer discretion is advised.</p>
+            </div>
+            <div class="card-action">
+              <a href="https://www.podbean.com/media/share/dir-v3tn7-26e7c790" target="_blank">Listen</a>
+            </div>
+          </div>
+          </div>
+
+
+            <div class="col s12 m4">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img src="resources/fall25sess.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator"><i class="material-icons right">more_vert</i>Group Therapy</span>
+              <p>
+                Anyone who struggles with emotional regulation can benefit from this group.
+                <b>September 7, 9am - 4pm ADT</b>
+                <b>September 21, 9am - 4pm ADT</b>
+                <b>$500 all materials + healthy snacks</b>
+              </p>
+            </div>
+
+            <div class="card-reveal">
+              <span class="card-title"><i class="material-icons right">close</i>Emotional Regulation Group</span>
+              <p>I am doing another Emotional Regulation group this fall. It is loosely based on the STEPPS program but I have modified it so it is not just for people diagnosed with Borderline Personality Disorder; anyone who struggles with emotional regulation can benefit from this group. Please feel free to email with any questions. See you in the fall!</p>
+            </div>
+
+            <div class="card-action">
+              <a href="https://monsterhousepublishing.com/products/pennys-triumphant-turnaround" target="_blank">Purchase</a>
+            </div>
+
+
+
+          </div>          
+        </div>
+
+
+        
+      </div> <!-- end row -->
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section scrollspy">
+    <div class="container">
+      <h2 class="light center-align">Get in Touch</h2>
+      <div class="row">
+        <div class="col s12">
+          <p class="flow-text">
+            Taking the first step towards healing can be a powerful act of courage. We are here to support you. Please reach out to schedule a free 15-minute consultation to see if we are the right fit for your journey.
+          </p>
+          <div class="row">
+            <div class="col s12">
+              <p><i class="material-icons left">email</i>truenorthcounselling5@outlook.com</p>
+              <p><i class="material-icons left">phone</i>(555) 555-5555</p>
+              <p><i class="material-icons left">location_on</i>161 Pine Street, Fredericton, New Brunswick, Canada E3A 3A2</p>
+            </div>
+          </div>
+        </div>
+ 
+      </div> <!-- end row -->
+        </div> <!-- end container -->
+
+  </section>
+  
+  <!-- Footer -->
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">True North Counselling</h5>
+          <p class="grey-text text-lighten-4">A practice committed to compassionate and culturally-informed healing.</p>
+        </div>
+        <div class="col l4 offset-l2 s12 social-icons">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/truenorthstacey/" target="_blank"><i class="material-icons">facebook</i></a></li>
+            <li><a class="grey-text text-lighten-3" href="https://ca.linkedin.com/in/stacey-maclean-ma-c-psyc-lct-01a90211" target="_blank"><i class="material-icons">linkedin</i></a></li>
+            <li><a class="grey-text text-lighten-3" href="truenorthcounselling5@outlook.com"><i class="material-icons">email</i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2025 True North Counselling. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Materialize JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize Materialize Sidenav
+      var elems = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(elems);
+      
+      // Initialize Scrollspy
+      var elemsScroll = document.querySelectorAll('.scrollspy');
+      M.ScrollSpy.init(elemsScroll);
+    });
+  </script>
+</body>
+</html>
